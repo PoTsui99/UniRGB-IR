@@ -110,7 +110,7 @@ sh scripts/train_seg.sh
 ## TODO
 
 - [x] Release the core code.
-- [ ] Release pre-trained weights.
+- [ ] Release pre-trained weights(on-going).
 
 ## Citation
 
@@ -119,7 +119,7 @@ If you find this code useful for your research, please consider citing:
 ```bibtex
 @article{yuan2024unirgb,
   title={UniRGB-IR: A Unified Framework for Visible-Infrared Downstream Tasks via Adapter Tuning},
-  author={Yuan, Maoxun and Cui, Bo and Zhao, Tianyi and Wei, Xingxing},
+  author={Yuan Maoxun and Cui Bo and Zhao Tianyi and Wei Xingxing},
   journal={arXiv preprint arXiv:2404.17360},
   year={2024}
 }
