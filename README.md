@@ -82,11 +82,14 @@ VT5000/
 
 Then, replace `/path/to/Datasets/` in the configuration file with the parent path of the local `VT5000/`.
 
-## Fetch the Pre-trained Weight
+## Fetching the Pre-trained Weight
 
 Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
 
 Then, you can replace the `/path/to/vitb_coco_IN1k_mae_coco_cascade-mask-rcnn_224x224_withClsToken_noRel.pth` in the configuration file with the local path of the converted weight.
+
+Weights of UniRGB-IR are released on [Hugging face](https://huggingface.co/tsuipo99/UniRGB-IR/tree/main).
+
 ## Training
 
 ### Object Detection
@@ -110,7 +113,9 @@ sh scripts/train_seg.sh
 ## TODO
 
 - [x] Release the core code.
-- [ ] Release pre-trained weights(on-going).
+- [x] Release pre-trained weights for OD tasks.
+- [] Release pre-trained weights for SS tasks.
+- [] Release pre-trained weights for SOD tasks.
 
 ## Citation
 
