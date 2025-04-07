@@ -100,7 +100,7 @@ class TwoStreamTwoStageDetectorFuseBeforeFPN(BaseDetector):
         return hasattr(self, 'roi_head') and self.roi_head is not None
 
     def extract_feat(self, batch_inputs: Tensor) -> Tuple[Tensor]:
-        """Extract features.
+        """Extract features. Backbone + Neck.
 
         Args:
             batch_inputs (Tensor): Image tensor with shape (N, C, H ,W).

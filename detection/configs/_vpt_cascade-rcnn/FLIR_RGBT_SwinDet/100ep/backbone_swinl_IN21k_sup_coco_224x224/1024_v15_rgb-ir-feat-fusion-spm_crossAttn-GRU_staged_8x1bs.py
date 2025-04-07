@@ -51,16 +51,20 @@ model = dict(
         deform_num_heads=12,
         deform_ls_init_values=0.0,
         deform_ratio=0.5,
+        adapter_dim=768,  # 明确设置adapter维度为768，与stage3维度相同（对应Swin-L）
         init_cfg=dict(
             type='Pretrained', checkpoint="/path/to/swinl_IN21k_sup_coco_cascade-mask-rcnn_224x224.pth")
     ), 
-    neck=dict(  # Adjust for Swin's feature dimensions
-        type='SimpleFPN',
-        backbone_channel=1536,  # Swin-L's channel at 3rd stage
+    neck=dict(  # Modified to use SwinFPN instead of SimpleFPN
+        type='SwinFPN',
         in_channels=[192, 384, 768, 1536],  # Swin-L channels
         out_channels=256,
         num_outs=5,
-        norm_cfg=norm_cfg),
+        norm_cfg=norm_cfg,
+        add_ln_norm=True,
+        use_residual=True,
+        fuse_type='sum',
+        top_block=dict(type='LastLevelMaxPool')),
     rpn_head=dict(
         type='RPNHead',
         num_convs=2,
