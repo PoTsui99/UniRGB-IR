@@ -82,6 +82,8 @@ VT5000/
 
 Then, replace `/path/to/Datasets/` in the configuration file with the parent path of the local `VT5000/`.
 
+You could download the salient maps for the salient object detection tasks of UniRGB-IR through the following links: [Google Drive](https://drive.google.com/file/d/1eP0JSmQbmJqMw4oPrj6EFBuGWjDpPnCO/view?usp=sharing)、[Baidu Netdisk](https://pan.baidu.com/s/1nZWgFQqebkPA0ka0OppcVg?pwd=4242).
+
 ## Fetching the Pre-trained Weight
 
 Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
