@@ -116,6 +116,7 @@ sh scripts/train_seg.sh
 
 - [x] Release the core code.
 - [x] Release pre-trained weights for OD tasks.
+- [x] Release the salient maps for SOD tasks.
 - [ ] Release pre-trained weights for SS tasks.
 - [ ] Release pre-trained weights for SOD tasks.
 
