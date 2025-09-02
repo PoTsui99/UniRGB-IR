@@ -37,6 +37,12 @@ cd segmentation/
 pip install -e -v .
 ```
 
+4. Compile the MultiScaleDeformableAttention (A.K.A. MSDA) module:
+```bash
+cd detection/projects/ViTDet/vitdet/ops/
+sh make.sh
+```
+
 ## Data Preparation
 
 ### Object Detection
