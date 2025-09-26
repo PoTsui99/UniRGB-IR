@@ -2,7 +2,7 @@
     <img src="./assets/banner.png" style="width: 80%; height: auto; max-height: 40vh;" alt="UniRGB-IR" />
 </div>
 
-# UniRGB-IR: A Unified Framework for RGB-Infrared Semantic Tasks via Adapter Tuning
+# [ACM MM 2025] UniRGB-IR: A Unified Framework for RGB-Infrared Semantic Tasks via Adapter Tuning
 
 <div align="center">
 
