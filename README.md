@@ -2,11 +2,11 @@
     <img src="./assets/banner.png" style="width: 80%; height: auto; max-height: 40vh;" alt="UniRGB-IR" />
 </div>
 
-# [ACM MM 2025] UniRGB-IR: A Unified Framework for RGB-Infrared Semantic Tasks via Adapter Tuning
+# [ACM MM 2025] UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.17360-b31b1b.svg)](https://arxiv.org/abs/2404.17360)&nbsp;[![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-yellow)](https://huggingface.co/tsuipo99/UniRGB-IR/tree/main)
+[![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.17360-b31b1b.svg)](https://arxiv.org/abs/2404.17360)&nbsp;[![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-yellow)](https://huggingface.co/tsuipo99/UniRGB-IR/tree/main) ![-RGBT-red](https://user-images.githubusercontent.com/38373305/205479612-e61d11b4-6c3e-4eb0-8d19-2e7170eb7783.svg)
 
 </div>
 
@@ -133,9 +133,10 @@ sh scripts/train_seg.sh
 If you find this code useful for your research, please consider citing:
 
 ```bibtex
-@article{yuan2024unirgb,
-  title={UniRGB-IR: A Unified Framework for RGB-Infrared Semantic Tasks via Adapter Tuning},
-  author={Yuan Maoxun and Cui Bo and Zhao Tianyi and Wang Jiayi and Fu Shan and Yang Xue and Wei Xingxing},
-  journal={arXiv preprint arXiv:2404.17360},
-  year={2024}
+@inproceedings{yuan2025unirgb,
+  title={Unirgb-ir: A unified framework for visible-infrared semantic tasks via adapter tuning},
+  author={Yuan, Maoxun and Cui, Bo and Zhao, Tianyi and Wang, Jiayi and Fu, Shan and Yang, Xue and Wei, Xingxing},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={2409--2418},
+  year={2025}
 }
