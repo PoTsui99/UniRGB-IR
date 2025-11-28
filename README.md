@@ -18,7 +18,7 @@
 
 Semantic analysis on visible (RGB) and infrared (IR) images has gained attention for its ability to be more accurate and robust under low-illumination and complex weather conditions. Due to the lack of pre-trained foundation models on the large-scale infrared image datasets, existing methods prefer to design task-specific frameworks and directly fine-tune them with pre-trained foundation models on their RGB-IR semantic relevance datasets, which results in poor scalability and limited generalization. In this work, we propose a general and efficient framework called UniRGB-IR to unify RGB-IR semantic tasks, in which a novel adapter is developed to efficiently introduce richer RGB-IR features into the pre-trained RGB-based foundation model. Specifically, our framework consists of a RGB-based foundation model, a Multi-modal Feature Pool (MFP) module and a Supplementary Feature Injector (SFI) module. The MFP and SFI modules cooperate with each other as an adapter to effectively complement the RGB-based features with the rich RGB-IR features. During training process, we freeze the entire foundation model to inherit prior knowledge and only optimize the proposed adapter. Furthermore, to verify the effectiveness of our framework, we utilize the vanilla vision transformer (ViT-Base) as the pre-trained foundation model to perform extensive experiments. Experimental results on various RGB-IR downstream tasks demonstrate that our method can achieve state-of-the-art performance. 
 
-## Installation
+## Installation 🛠️
 
 1. Create and activate the conda environment:
 ```bash
@@ -43,7 +43,7 @@ cd detection/projects/ViTDet/vitdet/ops/
 sh make.sh
 ```
 
-## Data Preparation
+## Data Preparation 📂
 
 ### Object Detection
 FLIR, KAIST, and LLVIP all need to be reformatted. Taking FLIR as an example, the directory structure should be:
@@ -95,13 +95,13 @@ Then, replace `/path/to/Datasets/` in the configuration file with the parent pat
 
 PS: The evaluation code (.m files) can be found through the [SiwnNet repo](https://github.com/liuzywen/SwinNet?tab=readme-ov-file#evaluation-code).
 
-## Fetching the Pre-trained Weight
+## Fetching the Pre-trained Weight 📥
 
-📥 Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
+Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
 
 Then, you can replace the `/path/to/vitb_coco_IN1k_mae_coco_cascade-mask-rcnn_224x224_withClsToken_noRel.pth` in the configuration file with the local path of the converted weight.
 
-Weights of UniRGB-IR are released on [Hugging face](https://huggingface.co/tsuipo99/UniRGB-IR/tree/main).
+📦 Weights of UniRGB-IR are released on [Hugging face](https://huggingface.co/tsuipo99/UniRGB-IR/tree/main).
 
 ## Training
 
@@ -131,7 +131,7 @@ sh scripts/train_seg.sh
 - [ ] Release pre-trained weights for SS tasks.
 - [ ] Release pre-trained weights for SOD tasks.
 
-## Citation
+## Citation 📚
 
 If you find this code useful for your research, please consider citing:
 
