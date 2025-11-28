@@ -47,15 +47,18 @@ sh make.sh
 
 ### Object Detection
 FLIR, KAIST, and LLVIP all need to be reformatted. Taking FLIR as an example, the directory structure should be:
-```
+
 FLIR_align/
 ├── train/
 ├── test/
 ├── Annotation_train.json
 ├── Annotation_test.json
-```
 
 Then, replace `/path/to/Datasets/` in the configuration file with the parent path of the local `FLIR_align/`.
+
+📥 You can download the COCO-format annotations for `FLIR_align` here:
+[Google Drive](https://drive.google.com/drive/folders/17vOd7919X8e2KxUOWEZ5EThRJDPAuoc4?usp=sharing)、[Baidu Netdisk](https://pan.baidu.com/s/1nZWgFQqebkPA0ka0OppcVg?pwd=4242).
+
 
 ### Semantic Segmentation
 Semantic Segmentation
@@ -88,13 +91,13 @@ VT5000/
 
 Then, replace `/path/to/Datasets/` in the configuration file with the parent path of the local `VT5000/`.
 
-You could download the salient maps for the salient object detection tasks of UniRGB-IR through the following links: [Google Drive](https://drive.google.com/file/d/1eP0JSmQbmJqMw4oPrj6EFBuGWjDpPnCO/view?usp=sharing)、[Baidu Netdisk](https://pan.baidu.com/s/1nZWgFQqebkPA0ka0OppcVg?pwd=4242).
+📥 You could download the salient maps for the salient object detection tasks of UniRGB-IR through the following links: [Google Drive](https://drive.google.com/file/d/1eP0JSmQbmJqMw4oPrj6EFBuGWjDpPnCO/view?usp=sharing)、[Baidu Netdisk](https://pan.baidu.com/s/1nRL1afCmfCvp9Z_9s4opCA?pwd=4242).
 
 PS: The evaluation code (.m files) can be found through the [SiwnNet repo](https://github.com/liuzywen/SwinNet?tab=readme-ov-file#evaluation-code).
 
 ## Fetching the Pre-trained Weight
 
-Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
+📥 Visit the [ViTDet page in Detectron2](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet), download the [ViT-Base model weight](https://dl.fbaipublicfiles.com/detectron2/ViTDet/LVIS/cascade_mask_rcnn_vitdet_b/329226874/model_final_df306f.pkl), convert it to the OpenMMLab weight format.
 
 Then, you can replace the `/path/to/vitb_coco_IN1k_mae_coco_cascade-mask-rcnn_224x224_withClsToken_noRel.pth` in the configuration file with the local path of the converted weight.
 
